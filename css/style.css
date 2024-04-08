@@ -1148,45 +1148,53 @@ footer{
     width: unset;
     left: 2rem;
 }
-
 }
-@media screen and (min-width: 400px) and (max-width: 641px){
-    
-    .toggle-btn i{
-        margin-right: 20px;
-        float: left;
+@media screen and (min-width: 400px) and (max-width: 640px){
+
+    body{
+        width: 563px;
     }
     header{
-        width: 100%;
+        width: 563px;
+        position:none; 
+        left: 0px;
+        right: 0px;
     }
-    main{
-        width: 100%;
+    .toggle-btn i{
+        margin-right: 40px;
+        float: right;
     }
     header div{
-       width: 100%;
-    }
-    header div a{
-        padding: 1%;
-    }
-    .switch{
-       padding-left: 5%;
-    }
-    .dropdown_menu{
-        width: unset;
-        left: 2rem;
-        }
+        width: 100%;
+     }
+     header div a{
+         padding: 1%;
+     }
+     .switch{
+        padding-left: 5%;
+     }
+     .dropdown_menu{
+         width: unset;
+         left: 2rem;
+         }
     #nameRl{
-        font-size: 0.7em;
-    }
+            font-size: 0.7em;
+            /* margin-left: 20px; */
+        }
     #student{
-        font-size: 0.5em;
-    }
+            font-size: 0.5em;
+            /* margin-left: 20px; */
+        }
     .video-masthead{
-        height: 75vh;
-        width: 100%;   
-    }
+            height: 75vh;
+            width: 100%;   
+        }
     .main2 div{
-        display: block;
+            display: block;
+        }
+    #main1{
+        position: none;
+        width: 550px;
     }
     #aboutme p{
         font-size: 0.7em;
@@ -1198,57 +1206,49 @@ footer{
     #profile{
         width: 50%;
     }
+    .main3{
+        height:70vh;
+        padding: 8%;
+    }
     .main3 p {
         font-size: 0.7em;
-    }
-    .main3 div{
-        height: 150px;
+        padding: 5%;
+        padding-bottom: 0%;
     }
     #btn-pdf{
         padding: 10px 15px;
         font-size: 0.5em;
     }
-    .skills{
-        /* display: block; */
-        padding: 1%;
-         
-    }
-    .skills p{
-        font-size: 0.5em;
-    }     
-    
-    .skills div{
-        padding: 5.8%;
-        width: 0%;
-        height: 0%;
-    }
-    .main4 div div div p{
-        font-size: 0.6em;
-    } 
     .label2{
-        font-size: 0.6em;
+        font-size: 0.8em;
     }
     .content2{
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
     .main6{
-        width: 95%;
+        /* width: 500px; */
         display: block;
         justify-items: center;
         text-align: center;
         justify-content: center;
-        padding: 15%; 
+        padding: 0%;
+       padding-left: 15%;
+       padding-bottom: 8%;
+       padding-top: 5%;
     }
-    .main6 div{         
-        padding: 5%;
+    .skills p{
+        font-size: 0.5em;
+    } 
+    .main6 div{
         justify-items: center;
         text-align: center;
         justify-content: center;
-       
+        
     }
     button{
         font-size: 0.5em;
         padding: 0%;
+        margin-bottom: 5%;
     }
     .mask{
         width: 100%;
@@ -1303,18 +1303,22 @@ footer{
          font-size: 10px;
      }
     .main7{
-        width: 95%;
+        /* width: 500px; */
         display: block;
         justify-items: center;
         text-align: center;
         justify-content: center;
-        padding: 15%; 
+        padding: 0%;
+        padding-left: 15%;
+        
+         
     }
     .main7 div{
-        padding: 5%;
+         
         justify-items: center;
         text-align: center;
         justify-content: center;
+        
     }
     #box-content4{
         width: 80%;
@@ -1365,12 +1369,15 @@ footer{
         font-size: 0.7em;
         padding: 5%;
      }
-    .main8{
+     .main8{
         display: block;
         height: auto;
     }
     .main8 div{
         width: 100%;
+    }
+    .flip{
+        padding-left: 0%;
     }
     #modalBtn{
         font-size: 0.4em;
@@ -1386,7 +1393,7 @@ footer{
         
         font-size: 1.2em;
       }
-    footer{
+      footer{
         height: auto;
         width: 100%;
     }  
@@ -1403,4 +1410,30 @@ footer{
     #name{
         font-size: 1em;
     }
+    .contact-CTA .modal-content{
+         
+        top:10px;
+        padding: 30px;
+        border-radius: 15px;
+        width: 60%;
+        height: 65vh;
+      }
+      .main7{
+        width: unset
+      }
+      .contact-CTA .modal{
+        
+        top: 15%;
+        
+      }
+      .flip figure img{
+        width: 90%;
+        height: 90%;
+         
+      }
+    .flip figure figcaption{
+         
+        width: 90%;
+        height: 92%;
     }
+}

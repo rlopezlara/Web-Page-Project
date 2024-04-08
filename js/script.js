@@ -39,6 +39,7 @@ var head = document.querySelector('header');
 var pElements = document.querySelectorAll('p');
 var h3Elements = document.querySelectorAll('h3');
 var aElements = document.querySelectorAll('nav menu li a');
+var dotsElements = document.querySelectorAll('.dots label');
 var titleElements = document.getElementsByClassName('title');
 var divElements = document.getElementsByClassName('mask');
 
@@ -83,6 +84,10 @@ checkbox.addEventListener('change', function() {
         // Apply the background color style to each element
         label2Bg[p].style.backgroundColor = '#b6e88c';
         label2Bg[p].style.color = '#032e5d';
+      }
+      for (var l = 0; l < dotsElements.length; l++) {
+        // Apply the background color style to each element
+        dotsElements[l].style.border = 'solid #f4f4f4 3px';
       }
 
       for(var n = 0; n < nameSpan.length; n++){
@@ -137,7 +142,10 @@ checkbox.addEventListener('change', function() {
     for(var n = 0; n < nameSpan.length; n++){
       nameSpan[n].style.color ='';
       }
-
+      for (var l = 0; l < dotsElements.length; l++) {
+        // Apply the background color style to each element
+        dotsElements[l].style.border = '';
+      }  
     video.style.display = 'block'; // Show the video element  
     video.setAttribute('src', './video/bgvideo.mp4');
     video.setAttribute('type', 'video/mp4');
