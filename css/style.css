@@ -387,7 +387,7 @@ header nav menu li a:hover{
     padding: 5%;
 }
 #box-content1{
-    background-image: url("/img/python2.png");
+    background-image: url("./img/python2.png");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -464,7 +464,7 @@ header nav menu li a:hover{
 }
 
 #box-content2{
-    background-image: url("/img/JavaS.png");
+    background-image: url("./img/JavaS.png");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -500,7 +500,7 @@ header nav menu li a:hover{
     opacity: 1;
 }
 #box-content3{
-    background-image: url("/img/Java-Logo.png");
+    background-image: url("./img/Java-Logo.png");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -547,7 +547,7 @@ header nav menu li a:hover{
     padding-top: 0%;
 }
 #box-content4{
-    background-image: url("/img/Csharp2.png");
+    background-image: url("./img/Csharp2.png");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -583,7 +583,7 @@ header nav menu li a:hover{
     font-size: 15px;
 }  
 #box-content5{
-    background-image: url("/img/css.png");
+    background-image: url("./img/css.png");
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -620,7 +620,7 @@ header nav menu li a:hover{
 }  
 
 #box-content6{
-    background-image: url("/img/ASP.NET_.png");
+    background-image: url("./img/ASP.NET_.png");
     background-size: cover;
     background-position: center;
     height: 100%;
