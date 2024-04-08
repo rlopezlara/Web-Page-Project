@@ -27,6 +27,7 @@ var nameRl = document.getElementById('nameRl');
 var student = document.getElementById('student');
 var image = document.getElementById('profile');
 var main1 = document.getElementById('main1');
+var nameSpan = document.querySelectorAll('.nameSpan');
 var accordionBg = document.getElementsByClassName('content2');
 var label2Bg = document.getElementsByClassName('label2');
 var btn = document.getElementById('btn-pdf');
@@ -83,6 +84,10 @@ checkbox.addEventListener('change', function() {
         label2Bg[p].style.backgroundColor = '#b6e88c';
         label2Bg[p].style.color = '#032e5d';
       }
+
+      for(var n = 0; n < nameSpan.length; n++){
+      nameSpan[n].style.color ='orange';
+      }
       nameRl.style.color = 'orange';
       nameRl.style.textShadow = '4px 4px 4px #368f0d';
       student.style.color = 'white';
@@ -91,6 +96,7 @@ checkbox.addEventListener('change', function() {
       main1.style.backgroundColor ='rgba(29, 61, 3, 0.4)';
       foot.style.backgroundImage = 'linear-gradient(90deg, #0f3718 0%, #10205d 17%, #795f0c 45%, #10205d 78%, #0f3718 99%)';  
       head.style.backdropFilter = "blur(10px)";
+      
     } else {
     console.log("Checkbox is unchecked");
     html.style.backgroundColor = ''; // Revert background color
@@ -128,6 +134,9 @@ checkbox.addEventListener('change', function() {
       label2Bg[p].style.backgroundColor = '';
       label2Bg[p].style.color = '';
     }
+    for(var n = 0; n < nameSpan.length; n++){
+      nameSpan[n].style.color ='';
+      }
 
     video.style.display = 'block'; // Show the video element  
     video.setAttribute('src', './video/bgvideo.mp4');
@@ -144,6 +153,7 @@ checkbox.addEventListener('change', function() {
     main1.style.backgroundColor ='';  
     foot.style.backgroundImage = '';
     head.style.backdropFilter = "";
+    
   }
 });
 // Make our popup form
