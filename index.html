@@ -17,12 +17,11 @@
 </head>
 <body>
 <header>     
-    <div>        
-        <a href="#"><i class="fa-solid fa-laptop fa-xl" style="color: #ffffff;"></i></a>
-        <a href="https://www.linkedin.com/in/rodrigolopezl/"><i class="fa-brands fa-linkedin fa-xl" style="color: #f9fafb;"></i></a>
-        <a href="https://github.com/rlopezlara"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a>
-        <a href="https://www.instagram.com/just_rod_life/"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
-      </div>
+    <!-- Logo icon -->
+    <div class="Logo">
+        <a href="#"><i class="fa-solid fa-laptop fa-2xl" style="color: #ffffff;"></i></a>
+    </div>
+    <!-- Switch icon to change color -->
       <div class="switch">
         <input type="checkbox" id="toggle">
         <label for="toggle"></label>
@@ -42,6 +41,7 @@
       <div class="toggle-btn">
         <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
     </div>
+    <!-- Responsive menu bar -->
     <div class="dropdown_menu">
           <li><a href="#">HOME</a></li>
           <li><a href="#aboutme">ABOUT</a></li>
@@ -52,6 +52,7 @@
     </div>
 </header>
 <main>
+    <!-- video section -->
     <section class="video-masthead">
         <video id="background-video" autoplay loop muted poster ="./img/code.jpg">
           <source src="./video/bgvideo.mp4" type="Video/mp4">
@@ -60,9 +61,15 @@
         <h2 id="nameRl">
           RODRIGO LOPEZ  
         </h2>
-        <p id="student">Computer Programming Student</p>        
+        <p id="student">Computer Programming Student</p>
+        <div class="icons">           
+            <a href="https://www.linkedin.com/in/rodrigolopezl/"><i class="fa-brands fa-linkedin fa-xl" style="color: #f9fafb;"></i></a>
+            <a href="https://github.com/rlopezlara"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a>
+            <a href="https://www.instagram.com/just_rod_life/"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+          </div>        
         </div> 
     </section>
+    <!-- About me Section -->
     <section class="main2">
         <div>
             <div>
@@ -76,6 +83,7 @@
             </div>
         </div>
     </section>
+    <!-- Computer Programming section -->
     <section class="main3">
         <div>
         <h2 class="title">COMPUTER PROGRAMMING</h2>
@@ -111,38 +119,33 @@
             <div>
             <i class="fa-brands fa-php fa-beat fa-2xl" style="color: #103575;"></i>
             <p>Php</p>
-            </div>
-            <div>
-            <i class="fa-brands fa-bootstrap fa-beat fa-2xl" style="color: #103575;"></i>
-            <p>Bootstrap</p>
-            </div>
-            <div>
-            <i class="fa-solid fa-c fa-beat fa-2xl" style="color: #103575;"></i>
-            <p>C#</p>
-            </div>    
+            </div>                            
             </div>
         </div>
-    </section>  
-    <section class="main4">
-        <div>
-            <h3 class="title">SKILLS IN PROCESS WINTER 2024</h3>
-            <div class="skills">
-                <div>
-                <i class="fa-brands fa-js fa-beat fa-2xl" style="color: #103575;"></i>
-                 <p>JavaScript</p>   
-                </div>
-                <div>
-                <i class="fa-brands fa-microsoft fa-beat fa-2xl" style="color: #103575;"></i>
-                <P>Azure</P>
-                </div>
-                <div>
-                <i class="fa-solid fa-globe fa-beat fa-2xl" style="color: #103575;"></i>
-                <p>Asp.Net</p>
-                </div>                   
+        <div class="skills">
+            <div>
+            <i class="fa-brands fa-js fa-beat fa-2xl" style="color: #103575;"></i>
+             <p>JavaScript</p>   
             </div>
-        </div>   
+            <div>
+            <i class="fa-brands fa-microsoft fa-beat fa-2xl" style="color: #103575;"></i>
+            <P>Azure</P>
+            </div>
+            <div>
+            <i class="fa-solid fa-globe fa-beat fa-2xl" style="color: #103575;"></i>
+            <p>Asp.Net</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-c fa-beat fa-2xl" style="color: #103575;"></i>
+                <p>C#</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-bootstrap fa-beat fa-2xl" style="color: #103575;"></i>
+                <p>Bootstrap</p>
+            </div>                   
+        </div>
     </section>  
-
+    <!-- Work experience Accordion -->
     <section class="main5" id="work">        
             <h1 class="title">WORK EXPERIENCE</h1>
             <div class="accordion2">
@@ -222,6 +225,7 @@
             </div>
             
     </section>
+    <!-- Section Relevant Projects -->
     <h1 class="title">RELEVANT PROGRAMMING PROJECTS</h1>
     <section class="main6" id="projects">        
         <div id="box-content1">
@@ -287,7 +291,7 @@
     <div id="enter" >
     <h1 class="title">ENTERTAINMENT</h1>
     <p>I like spending time in outdoor activities, exercising and enjoying nature. I like taking pictures also, especially of beautiful landscapes and views.  </p>
-    
+    <!-- Talking about my likes -->
     </div>
         <section class="main8" >
         <div class="flip">            
@@ -325,6 +329,7 @@
 
         </div>
     </section>
+    <!-- Section top narrow -->
     <div id="arrow">
     <a href="#" >
         <i class="fa-solid fa-arrow-up-long fa-xl" style="color: #368f0d;"></i>
@@ -353,8 +358,8 @@
     </div>
   </section>
 </main>
-<footer>
-    
+<!-- Foot information -->
+<footer>    
 <div>
     <h1>Contact Information</h1>
     <p id="name"><i class="fa-solid fa-code fa-xl" style="color: #03284f;"></i> RODRIGO LOPEZ</p>

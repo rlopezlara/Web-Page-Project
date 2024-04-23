@@ -1,4 +1,4 @@
-
+/* General Styling  */
 html{
     scroll-behavior: smooth;
     margin: 0px;
@@ -12,6 +12,7 @@ body{
 p,li,a,h1,h2,h3,h4,h5, div, button{
     font-family: 'Montserrat', sans-serif;
 }
+/* Header Styling  */
 header{
     background-color:rgba(0, 0, 0, 0.7);    
     width: 100%;
@@ -28,15 +29,20 @@ header div{
     text-align:center;
          
 }
-header div a{
-    text-decoration: none;
-    color: #f4f4f4;
-    padding: 3%;
-     
-     
+.Logo{
+    width: 30%;
 }
-header div a:hover{
+.Logo a img{
+    width: 60%;
+}
+.icons a{
+    padding: 1%;
+    font-size: 20px;
+    
+}
+.icons a:hover{
     background-color: #368f0d;
+    padding: 1%;
     border-radius: 50%;
     transition: background-color 1s ease 0s;
 }
@@ -101,7 +107,7 @@ header nav menu ul li{
     text-decoration: none;
     display: block;
 }
- 
+ /* Special responsive part for dropdrow styling */
 @media(max-width:864px){
     .navbar .links, .navbar  {
         display: none;
@@ -131,7 +137,7 @@ header nav menu ul li{
        padding-left: 5%;
     }
 }
-/* end */
+
 header nav menu ul li a{
     color: #f4f4f4;
     text-decoration: none;
@@ -184,7 +190,8 @@ header nav menu li a:hover{
     width: 100%;
     position: absolute;
     text-align: center;
-    background-color: rgba(19, 19, 19, 0.6);    
+    background-color: rgba(19, 19, 19, 0.6);   
+    bottom: 10% 
 }
 #main1 h2{
     white-space: nowrap;
@@ -205,7 +212,7 @@ header nav menu li a:hover{
     
 }
 
-
+/* Hover special effect at the header */
 @keyframes cursor {
     50% {
         border-color: transparent;  
@@ -231,7 +238,7 @@ header nav menu li a:hover{
     filter: grayscale(0%);
     transition: all linear 1s; 
 }
-/* main 02 */
+/* main 2 styling */
 
 .main2 div{
     text-align: center;
@@ -265,10 +272,11 @@ header nav menu li a:hover{
 .main3{
     text-align: center;
     align-items: center;
+    height: auto;
     
 }
 .main3 div{
-    height: 50vh;
+    height: 45vh;
 }
 .main3 div h2{
     margin-bottom: 3%;
@@ -287,17 +295,18 @@ header nav menu li a:hover{
     transition: background-color 0.6s ease;
     font-weight: 500;
 }
-#btn-pdf:hover{
-    /* background-image: linear-gradient(to right, #024082 0%, #024082 50%, #f4f4f4 50%, #f4f4f4 100%); */
+#btn-pdf:hover{    
     color: #f4f4f4;
     background-color: #024082;
     cursor: pointer;
     text-decoration: underline;
     box-shadow: 2px 2px 2px #0e0504;
 }
+/* Programing languages Styling */
 .skills{
     display: flex;
     justify-content: center;
+    height: 150px;
 }
 .skills div{
     padding: 3%;
@@ -311,18 +320,13 @@ header nav menu li a:hover{
     animation: none;   
     filter: drop-shadow(0 0 10px rgba(69, 133, 23, 1));
 }
-.main4{    
-    padding: 3%;
-    text-align: center;
-    align-items: center;
-    height: 20vh;
-}
-
-.main5{
+/* Main5 styling */
+ .main5{
     box-sizing: border-box;
     justify-content: center;
     overflow: hidden;    
     padding: 8%;   
+    padding-top: 0%;
 }
 .main5 h1{
     text-align: center;
@@ -670,7 +674,7 @@ header nav menu li a:hover{
 #enter{
     text-align:center
 }
-/* Flip effect */
+/* Flip effect Image */
 .flip{
     perspective: 1000px;
     width: 40%;
@@ -861,7 +865,7 @@ header nav menu li a:hover{
 #img5:checked ~ .m5 {
     margin-left: -400%;
 }
- 
+ /* footer styling */
 footer{
     height: 60vh;
     display: flex;
@@ -942,7 +946,7 @@ footer div h4{
     transform: translateX(30px);
   }
 
-  /* RESPONSIVE */
+  /* RESPONSIVE PART*/
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
 menu{
@@ -960,6 +964,9 @@ header div a{
     float: right;   
     margin-left: 0px; /* Remove margin */
 }
+.main3 div:first-child {
+    padding-bottom: 60px;
+}
 #profile{
     width: 70%;
     height: auto;
@@ -969,6 +976,9 @@ header div a{
 }
 .hiking-icon {
     font-size: 1px; /* Adjust the size as needed */
+}
+footer{
+    height: auto;
 }
   }
 
@@ -985,6 +995,9 @@ header menu li{
     padding: 0%;
     font-size: 0.5em;    
 }
+.Logo a img{
+    width: 90%;
+}
 #nameRl{
     font-size: 1.2em;
 }
@@ -993,6 +1006,12 @@ header menu li{
 }
 .main2 div{
     display:block;
+}
+.main3 div:first-child {
+    padding-bottom: 30px;
+}
+.main3 div:last-child{
+    height: 150px;
 }
 #aboutme p{
     padding: 5%;
@@ -1160,6 +1179,17 @@ footer{
         left: 0px;
         right: 0px;
     }
+    .main3{
+        height: auto;
+    }
+   
+    .Logo a img{
+        width: 100%;
+    }
+    .Logo{
+        width: 30%;
+        margin-left: 5%;
+    }
     .toggle-btn i{
         margin-right: 40px;
         float: right;
@@ -1177,16 +1207,16 @@ footer{
          width: unset;
          left: 2rem;
          }
+
+       
     #nameRl{
-            font-size: 0.7em;
-            /* margin-left: 20px; */
+            font-size: 0.9em;            
         }
     #student{
-            font-size: 0.5em;
-            /* margin-left: 20px; */
+            font-size: 0.7em;             
         }
     .video-masthead{
-            height: 75vh;
+            height: 85vh;
             width: 100%;   
         }
     .main2 div{
@@ -1195,6 +1225,8 @@ footer{
     #main1{
         position: none;
         width: 550px;
+        bottom: 20%;
+        
     }
     #aboutme p{
         font-size: 0.7em;
@@ -1206,9 +1238,11 @@ footer{
     #profile{
         width: 50%;
     }
-    .main3{
-        height:70vh;
-        padding: 8%;
+    .main3 div:last-child{
+       height: 100px;
+    }
+    .main3 div:nth-child(2){
+        height: 150px; 
     }
     .main3 p {
         font-size: 0.7em;
@@ -1226,7 +1260,7 @@ footer{
         font-size: 0.6em;
     }
     .main6{
-        /* width: 500px; */
+        
         display: block;
         justify-items: center;
         text-align: center;
@@ -1435,5 +1469,291 @@ footer{
          
         width: 90%;
         height: 92%;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 399px){
+
+    body{
+        width: 350px;
+    }
+    header{
+        width: 350px;
+    }
+    .switch label{
+        width: 40px;
+        height: 25px;
+    }
+    .switch input:checked + label:before {
+        transform: translateX(16px);
+      }
+    .Logo a i{
+        font-size: 25px
+    }
+    .Logo{
+        width: 30%;
+        margin-left: 5%;
+    }
+
+    .toggle-btn i{
+        margin-right: 40px;
+        float: right;
+    }
+    .dropdown_menu{
+        width: unset;
+        left: 1rem;
+        }
+
+    #nameRl{
+        font-size: 0.7em;
+            /* margin-left: 20px; */
+    }
+    #student{
+        font-size: 0.5em;
+        /* margin-left: 20px; */
+    }
+    .video-masthead{
+        height: 75vh;
+                 
+    }
+    #main1{
+        position: none;
+        width: 350px;
+        bottom: 30%;
+        
+    }
+    .icons a{         
+        font-size: 12px;
+        }
+  
+    .main2 div{
+            display: block;
+    }        
+    #aboutme p{
+        font-size: 0.6em;
+        padding: 2%;
+    }
+    .skills{
+        height: 100px;
+    }
+    .skills div{
+        height: 100px;
+    }
+    .title{
+        font-size: 1.0em;
+    }
+   
+    .main3 div:last-child{
+        height: 50px;
+        padding-bottom: 50px;
+     }
+     .main3 div:nth-child(2){
+         height: 120px; 
+     }
+        
+    .main3 p {
+        font-size: 0.6em;
+        padding: 3%;
+        padding-bottom: 0%;
+    }
+    #btn-pdf{
+        padding: 10px 15px;
+        font-size: 0.5em;
+    }
+    .main6{        
+        display: block;
+        justify-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0%;
+       padding-left: 15%;
+       padding-bottom: 8%;
+       padding-top: 5%;
+    }   
+    .main6 div{
+        justify-items: center;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    button{
+        font-size: 0.5em;
+        padding: 0%;
+        margin-bottom: 5%;
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+    }
+    .mask{
+        width: 100%;
+        height: 100%;
+    }
+    #box-content1{
+       width: 80%;
+       margin: 0px;
+       padding: 0%;
+       height: 100%;
+       text-align: center;
+       display: flex;
+       margin-bottom: 8%;
+              
+    }   
+    #box-content1 h3{
+        font-size: 15px;
+    }
+    #box-content1 p{
+        font-size: 10px;
+    }
+
+    #box-content2{
+        width: 80%;
+       margin: 0px;
+       padding: 0%;
+       height: 100%;
+       text-align: center;
+       display: flex;
+       margin-bottom: 8%;
+       
+     }   
+    #box-content2 h3{
+         font-size: 15px;
+     }
+    #box-content2 p{
+         font-size: 10px;
+     }
+     #box-content3{
+        width: 80%;
+       margin: 0px;
+       padding: 0%;
+       height: 100%;
+       text-align: center;
+       display: flex;
+         
+     }   
+    #box-content3 h3{
+         font-size: 15px;
+     }
+    #box-content3 p{
+         font-size: 10px;
+     }
+     .main7{       
+        display: block;
+        justify-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0%;
+        padding-left: 15%;       
+         
+    }
+    .main7 div{
+         
+        justify-items: center;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    #box-content4{
+        width: 80%;
+        margin: 0px;
+        padding: 0%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        margin-bottom: 8%;
+     }   
+     #box-content4 h3{
+         font-size: 15px;
+     }
+     #box-content4 p{
+         font-size: 10px;
+     }
+     #box-content5{
+        width: 80%;
+       margin: 0px;
+       padding: 0%;
+       height: 100%;
+       text-align: center;
+       display: flex;
+       margin-bottom: 8%;
+        
+     }   
+     #box-content5 h3{
+         font-size: 15px;
+     }
+     #box-content5 p{
+         font-size: 10px;
+     }
+     #box-content6{
+        width: 80%;
+       margin: 0px;
+       padding: 0%;
+       height: 100%;
+       text-align: center;
+       display: flex;        
+     }   
+     #box-content6 h3{
+         font-size: 15px;
+     }
+     #box-content6 p{
+         font-size: 10px;
+     }
+     #enter{
+        font-size: 0.9em;
+        padding: 5%;
+     }
+     .main8{
+        display: block;
+        height: auto;
+    }
+    .main8 div{
+        width: 100%;
+    }
+    .flip figure img{       
+        height: 100%;
+       
+      }
+    .flip figure figcaption{       
+        height: 87%;
+         
+    }      
+           
+      
+    #modalBtn{
+        font-size: 0.4em;
+        padding: 10px 15px;
+        border: solid 2px;
+    }
+    .contact-CTA .modal-content{
+         
+        width: 60%;
+        height: 70vh;
+      }
+    .contact-CTA .modal-content h4{        
+        font-size: 1em;
+      }
+    .label2{
+        font-size: 11px;
+    }
+    .content2{
+        font-size: 11px;
+     
+    }  
+    footer div h1{
+        margin: 0%;
+        padding: 0%;
+    } 
+    footer div h1{
+        font-size: 1.0em;
+        padding-top: 5%;
+        border-bottom: none;
+    }
+    footer div p{
+        font-size: .7em;
+    }
+    #name{
+        font-size: .9em;
+    }
+    footer div div h4{
+        font-size: .6em;
     }
 }
